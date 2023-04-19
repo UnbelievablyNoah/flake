@@ -16,13 +16,7 @@
                 "MainModule": {
                     "$path": "src/module",
                     "flake": {
-                        "$path": "src/flake",
-                        "libraries": {
-                            "$path": "Packages",
-							"Fusion": {
-								"$path": "src/flake/libraries/Fusion"
-							}
-                        }
+                        "$path": "src/flake"
                     }
                 }
             }
@@ -30,21 +24,13 @@
         "ReplicatedStorage": {
             "flake": {
                 "$className": "Folder",
-                "addons": {
-                    "$className": "Folder",
-                    "essentials": {
-                        "$path": "src/addons/essentials"
-                    }
-                },
                 "config": {
                     "$path": "src/config.luau"
                 }
             }
         },
         "ServerStorage": {
-            "addons": {
-                "$path": "src/addons"
-            }
+            
         },
         "Workspace": {
             "$properties": {
